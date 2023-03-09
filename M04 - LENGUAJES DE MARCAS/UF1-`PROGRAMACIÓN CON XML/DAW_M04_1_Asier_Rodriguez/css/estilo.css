@@ -1,0 +1,268 @@
+/*Desarrollado por Asier Rodriguez*/
+/*Globales*/
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(158, 34, 34);
+  font-size: 35px;
+  margin: 0;
+}
+h3 {
+  text-transform: uppercase;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+li {
+  padding: 30px;
+  display: inline;  
+}
+nav a:hover {
+  color: rgb(158, 34, 34);
+  text-decoration: underline;
+  text-decoration-color: rgb(158, 34, 34);
+  text-decoration-thickness: 3px;
+}
+a, p, h2, h3 {
+  font-family: 'khand', sans-serif;
+}
+
+/*Navegador*/
+.navegador {
+  padding: 15px 100px;
+}
+.navegador-principal {
+  color: black;
+  text-decoration: none;
+  text-align: right;
+  text-transform: uppercase;
+}
+label, input {
+  display: none;
+}
+
+/*Logo y Venom*/
+.logo-inicial {
+  padding-right: 50px;
+  float: left;
+}
+.Venom {
+  float: left;
+}
+/*También lo ponemos en el footer*/
+.Venom, .footer-Venom {
+  font-family: 'Righteous', sans-serif;
+}
+
+ /*Texto y botón con imagen de fondo*/
+.seccion-Entrar {
+  font-size: 30px;
+  background-image: url(../imgs/cabecera-venom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 120px 0px 55%;
+}
+.contenido-Entrar {
+  background-color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+.Venom-rojo {
+  margin: 0;
+  text-transform: uppercase;
+  color: rgb(158, 34, 34);
+  padding-left: 70px;
+}
+.Simbionte {
+  margin: 0;
+  font-size: 40px;
+}
+.boton {
+  color: white;
+  background-color: rgb(158, 34, 34);
+  padding: 10 40;
+  border-radius: 15px;
+}
+
+
+/*Sección sobre mi con logo y texto*/
+ #seccion-Articulo {
+  padding: 5px 25%;
+  text-align: center;
+}
+.caja-SobreMi {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.logo-SobreMi {
+  padding-right: 10px;
+}
+
+
+/*Fotos*/
+#seccion-Fotos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 10%;
+  padding: 10px;
+  background-color: rgb(199, 195, 195);
+  gap: 20px;
+}
+.fotos-derecha {
+  width: 30%;
+}
+.fotos-derecha img {
+  width: 100%;
+  height: auto;
+}
+.fotos-derecha:hover {
+  filter: blur(5px);
+  transition: .5s;
+}
+.fotos-izquierda {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}  
+.fotos-arriba {
+  display: flex;
+  gap: 10px;
+}  
+.fotos-arriba img {
+  width: 50%;
+  height: auto;
+}
+.arriba-izquierda:hover {
+  -webkit-transform: rotate(360deg);transform: rotate(360deg);
+  transition: 1.5s;
+}
+.arriba-derecha:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+.fotos-abajo {
+  display: flex;
+  justify-content: center;
+}  
+.fotos-abajo img {
+  width: 100%;
+  height: 100%;
+}
+.fotos-abajo:hover {
+  -webkit-transform:scale(1.3);transform:scale(1.3);
+  transition: .8s;
+}
+
+
+/*Footer*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+}
+.footer-principal {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/*Para móvil*/
+@media screen and (max-width: 700px) {
+/*Navegador*/
+  nav a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .navegador {
+    padding: 0px;
+  }
+  ul{
+    padding: 0;
+    display: none;
+  }
+  input:checked  ~ ul{
+    display:block;
+  }
+  label {
+    font-size: 30px;
+    float: right;
+    margin-right: 10px;
+    display: inline-block;
+    font-weight: bold;
+    user-select: none;
+  }
+  li {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    background: black;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid white;
+  }
+  li a {
+    color: white;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .logo-inicial {
+    padding-right: 20px;
+  }
+
+  /*Texto y botón con imagen de fondo*/
+  .seccion-Entrar {
+    padding: 0px 80px 0px 15%
+  }
+
+  /*Sección sobre mi con logo y texto*/
+  .caja-SobreMi {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .logo-SobreMi {
+    padding-left: 10px;
+  }
+
+  /*Fotos*/
+  .fotos-arriba {
+  display: flex;
+  flex-direction: column;
+  }
+  .fotos-izquierda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }  
+  .fotos-arriba img {
+    width: auto;
+    height: auto;
+  }
+  .arriba-izquierda:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+  .arriba-derecha:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+  .fotos-abajo, .fotos-derecha {
+    display: none;
+  }
+  /*Footer*/
+  .ocultar-div {
+    display: none;
+  }
+}
