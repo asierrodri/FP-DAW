@@ -1,0 +1,31 @@
+<!-- Creado por Asier Rodriguez Murua -->
+
+<!-- 1.3. Realizar una aplicación que simule una calculadora.
+    Constará de una página HTML con dos campos de texto para
+    introducir los dos operadores, y 4 RadioButtons para seleccionar
+    la operación: suma, resta, multiplicación y división. Se mostrará
+    el resultado de la operación en una segunda página con la frase
+    “El resultado de la suma/resta/multiplicación/división es XXX
+    Hacer el programa usando un formulario de tipo POST. -->
+
+    <html>
+        <head>
+        </head>
+        <body>
+            <form method="POST" action="calculadora.php">
+                <fieldset>
+                    <legend>Numeros para calcular</legend>
+                    Numero1:<input type="number" name="numero1"><br>
+                    Numero2:<input type="number" name="numero2"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Operacion</legend>
+                    suma<input type="radio" value="suma" name="operaciones[]"/><br>
+                    resta<input type="radio" value="resta" name="operaciones[]"/><br>
+                    multiplicacion<input type="radio" value="multiplicacion" name="operaciones[]"/><br>
+                    division<input type="radio" value="division" name="operaciones[]"/><br>
+                </fieldset>
+                <input type="submit" name="enviar"/>
+            </form>
+        </body>
+    </html>

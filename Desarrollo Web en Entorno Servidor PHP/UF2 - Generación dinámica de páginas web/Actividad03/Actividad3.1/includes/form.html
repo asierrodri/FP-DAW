@@ -1,0 +1,64 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- No entiendo porque no hace falta ponerlo asi: "../imc_page.php" -->
+	<form method="POST" action="imc_page.php">
+		<fieldset>
+			<legend>Datos personales</legend>
+			Name:<input type="text" name="name"><br>
+			Year:<input type="number" name="year" min="1900" max="2024"><br>
+			Weight:<input type="number" name="weight" step=0.1><br>
+			Height:<input type="number" name="height" step=0.01><br>
+		</fieldset>
+		<input type="submit" name="enviar"/>
+	</form>
+</body>
+</html>

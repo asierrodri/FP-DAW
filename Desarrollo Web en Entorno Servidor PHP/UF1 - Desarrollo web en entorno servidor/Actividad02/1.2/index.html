@@ -1,0 +1,30 @@
+<!-- Creado por Asier Rodriguez Murua -->
+
+<!-- 1.2. Escribir un programa que represente el menú semanal de un
+    restaurante utilizando un array asociativo. Las claves serán los
+    días de la semana y los valores serán los platos.
+    El programa constará de un formulario en el que el usuario
+    introducirá el día del que quiere consultar el menú. A
+    continuación se mostrará el plato que corresponda al día
+    seleccionado.  -->
+
+<html>
+	<head>
+	</head>
+	<body>
+		<form method="POST" action="menu.php">
+			<fieldset>
+				<legend>Menu de la semana</legend>
+				Dia:<select name="dia-semana">
+					<option></option>
+					<option value="Lunes">Lunes</option>
+					<option value="Martes">Martes</option>
+					<option value="Miercoles">Miercoles</option>
+					<option value="Jueves">Jueves</option>
+					<option value="Viernes">Viernes</option>
+					<option value="Sabado">Sabado</option>
+					<option value="Domingo">Domingo</option>
+			<input type="submit" name="enviar"/>
+		</form>
+	</body>
+</html>

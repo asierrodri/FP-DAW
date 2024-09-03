@@ -1,0 +1,20 @@
+<!-- Creado por Asier Rodriguez Murua -->
+
+<!-- 1.4.	Escribe un programa desde el que podamos encender y apagar 8 luces con el mismo número de interruptores.
+En nuestra programa, las luces (o los interruptores) vendrán representadas por un array de 8 posiciones, todas ellas con el valor “false” inicialmente. Nuestras luces estarán numeradas del 0 al 7.
+El usuario introducirá en un formulario la secuencia de interruptores que pulsa, separados por coma. Por ejemplo, una secuencia correcta sería: 1,2,3,4,4,4,4,3,5.
+El programa mostrará el estado de las luces después de que el usuario haya introducido la secuencia. Para la secuencia anterior, el resultado sería: false, true, true, false, false, true, false, false. -->
+
+<html>
+	<head>
+	</head>
+	<body>
+		<form method="POST" action="luces.php">
+			<fieldset>
+				<legend>Texto a introducir</legend>
+				Texto:<input type="text" name="cadena"><br>
+			</fieldset>
+			<input type="submit" name="enviar"/>
+		</form>
+	</body>
+</html>
