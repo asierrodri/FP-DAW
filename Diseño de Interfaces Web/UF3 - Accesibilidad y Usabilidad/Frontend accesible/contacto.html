@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actividad 4</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+        <script type="text/javascript" src="contacto.js"> </script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar background">
+                <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="contenido-principal contenedor">
+            <h1>Formulario de Contacto</h1>
+    
+            <form action="index.html" method="get" id="formdata">
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" required="required" tabindex="1">
+                </div></br>
+                <div class="campo">
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" name="apellidos" id="apellidos" required="required" tabindex="2">
+                </div></br>
+                <div class="campo">
+                    <label for="email">E-mail: </label>
+                    <input type="text" name="email" id="email" required="required" tabindex="3">
+                </div></br>
+                <div class="campo">
+                    <input type="submit" id="botonenviar" value="Enviar" tabindex="4">
+                </div>
+            </form>
+    
+        </main>
+
+        <footer>
+            <p> ©All rights reserved.</p>
+            <p>Asier Rodriguez Murua</p>
+        </footer>
+
+    </body>
+
+</html>

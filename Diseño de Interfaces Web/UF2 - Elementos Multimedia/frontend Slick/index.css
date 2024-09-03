@@ -1,0 +1,154 @@
+body,html {
+    width: 100%;    
+    margin: 0;
+    padding: 0;    
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*En la cabecera,contenedor flexible el texto alineado al centro horizontal y verticalmente, 
+color de fondo azul y altura de 30 píxeles*/
+header {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b6c9c;
+    height: 30px;
+    color:white;
+}
+
+/*Pie de página, contenedor flexible, items alineados al centro horizontalmente y verticalmente,
+Color de fondo, más suave que la cabecera y altura*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a9daf;
+    height: 30px;
+    color:#4b6c9c;
+}
+
+/*Grosor de letras en el pie de pagina con un padding izquierda, respecto de la imagen de copyright*/
+footer span {   
+    font-weight: 700;
+}
+
+article,section,img,div {
+    width: 100%;    display: inline-block;
+    vertical-align: top; position: relative;
+}
+.centrar {
+    text-align: center;
+}
+.contenedorSlider{ width: 90%;}
+.selectOperation>div , #divTarget {
+    border: 1px solid #99CCFF;
+    margin: 5px;
+    min-height: 30px;
+    min-width: 75px;
+    width: 15%;
+    padding: 2px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.selectOperation>div:hover {
+    box-shadow: -1px 0 10px #99CCFF;
+}
+
+
+#domNodes {
+    border: 1px solid yellow;
+}
+
+#domNodes h3 {
+    text-align: center;
+}
+
+#domNodes>div {
+    border: 1px solid yellow;
+    margin: 5px;
+    min-height: 50px;
+    width: 75px;
+}
+
+#domNodes>span {
+    border: 1px solid red;
+    margin: 5px;
+    min-height: 30px;
+    min-width: 30px;
+
+}
+
+.addDiv {
+    border-color: #F8AC00;
+}
+
+.addSpan {
+    border-color: #008000;
+    background-color: #ADFF2F;
+}
+
+.setContent {
+    border-color: #FFCC99;
+}
+
+.delNode {
+    border-color: #A9ED86;
+}
+
+#domNodes .setContent, #domNodes .delNode { /*Seleccionamos los elementos para darles más ancho*/
+    width: 120px;
+}
+
+#domNodes .setContent:hover, #domNodes .delNode:hover{ /*Seleccionamos las clases para darle estilo*/
+    cursor: pointer;
+    box-shadow: -1px 0 10px #99CCFF;
+    font-weight: 700;
+}
+
+img { /*Asignamos tamaño y margen a las imagenes*/
+    width: 95px;
+    margin: 10px;
+}
+
+img:first-child { /*la primera imagen tiene un margen respecto de la izquierda*/
+    margin-left: 207px;
+}
+
+.contenedorSlider{ 
+    width: 100%;
+    text-align: center;
+}
+
+.boton { /*Estilos a los botones prev y next*/
+    border: solid 1px rgb(141, 112, 75);
+    border-radius: 20px;
+    width: 100px;
+    background-color: #ece5cc;
+}
+
+.boton:hover  { /*Estilos a los botones prev y next al pasar mouse por encima*/
+    cursor: pointer;
+    background-color: rgb(141, 112, 75);
+    font-weight: 550;
+    color: white;
+}
+
+/*Estilos para la línea divisoria. Reducimos el ancho y le damos un margen respecto de la izquierda, también le aplicamos
+un grosor a la línea y le damos un color*/
+hr {
+    margin-left: 5%;
+    width: 90%;
+    border: 3px solid #8dc6d2;
+}
+
+/*tamaño para la imagen de copyright y margen por abajo, está alineada verticalmente al centro, así que la
+subimos hacia arriba con un margen por abajo*/
+#copyright {
+    margin-left: 0px;
+    margin-bottom: 27px;
+    height: 10px;
+    width: 10px;
+}
