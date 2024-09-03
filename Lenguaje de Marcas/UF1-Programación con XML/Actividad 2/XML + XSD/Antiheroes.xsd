@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Se podría hacer todo dentro del mismo bloque pero es mas lioso-->
+    <xs:element name="antiheroes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="antiheroe" maxOccurs="9" minOccurs="3"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="antiheroe">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="codigo"/>
+                <xs:element ref="foto"/>
+                <xs:element ref="sexo"/>
+                <xs:element ref="poder"/>
+                <xs:element ref="fuerza"/>
+                <xs:element ref="comentario"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="nombre">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="10"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="codigo">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A][H]-[0]{3}[1-9]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="foto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="a">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="href" type="xs:string" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sexo">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="H"/>
+                <xs:enumeration value="M"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="poder">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Volar"/>
+                <xs:enumeration value="Invisibilidad"/>
+                <xs:enumeration value="Agilidad"/>
+                <xs:enumeration value="Regeneracion"/>
+                <xs:enumeration value="Transformacion"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="fuerza" type="xs:integer"/>
+
+    <xs:element name="comentario">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="50"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

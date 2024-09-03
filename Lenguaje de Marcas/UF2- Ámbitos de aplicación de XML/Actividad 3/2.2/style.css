@@ -1,0 +1,26 @@
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.padre {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.descripcion {
+    margin-left: 30px;
+    border-color: black;
+    border: 1px;
+    border-style: solid;
+    width: 35%;
+}
+
+.descripcion p {
+    margin-left: 10px;
+}
+
+img:active {
+    transform: scale(2.0);
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE antiheroes SYSTEM "Antiheroes.dtd">
+
+<antiheroes>
+    <antiheroe id="AH-0001">
+        <nombre>Deadpool</nombre>
+        <codigo>AH-0001</codigo>
+        <foto>
+            <a href="imgs/deadpool-love.jpg">Deadpool</a>
+        </foto>
+        <sexo>H</sexo>
+        <poder>Regeneracion</poder>
+        <fuerza>6</fuerza>
+        <comentario>Es mi favorito</comentario>
+    </antiheroe>
+
+    <antiheroe id="AH-0002">
+        <nombre>Joker</nombre>
+        <codigo>AH-0002</codigo>
+        <foto>
+            <a href="imgs/joker.jpg">Joker</a>
+        </foto>
+        <sexo>H</sexo>
+        <poder>Agilidad</poder>
+        <fuerza>2</fuerza>
+        <comentario>Tengo una foto suya</comentario>
+    </antiheroe>
+
+    <antiheroe id="AH-0003">
+        <nombre>Venom</nombre>
+        <codigo>AH-0003</codigo>
+        <foto>
+            <a href="imgs/venom.jpg">Venom</a>
+        </foto>
+        <sexo>H</sexo>
+        <poder>Transformacion</poder>
+        <fuerza>8</fuerza>
+        <comentario>Me da un poco de miedo</comentario>
+    </antiheroe>
+</antiheroes>

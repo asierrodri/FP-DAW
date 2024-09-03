@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Antiheroes.xsl"?>
+
+<antiheroes>
+    <antiheroe id="AH-0001">
+        <nombre>Deadpool</nombre>
+        <codigo>AH-0001</codigo>
+        <foto>../imgs/deadpool-love.jpg</foto>
+        <sexo>H</sexo>
+        <poder>Regeneracion</poder>
+        <fuerza>6</fuerza>
+        <comentario>Es mi favorito</comentario>
+    </antiheroe>
+
+    <antiheroe id="AH-0002">
+        <nombre>Joker</nombre>
+        <codigo>AH-0002</codigo>
+        <foto>../imgs/joker.jpg</foto>
+        <sexo>H</sexo>
+        <poder>Agilidad</poder>
+        <fuerza>2</fuerza>
+        <comentario>Tengo una foto suya</comentario>
+    </antiheroe>
+
+    <antiheroe id="AH-0003">
+        <nombre>Venom</nombre>
+        <codigo>AH-0003</codigo>
+        <foto>../imgs/venom.jpg</foto>
+        <sexo>H</sexo>
+        <poder>Transformacion</poder>
+        <fuerza>8</fuerza>
+        <comentario>Me da un poco de miedo</comentario>
+    </antiheroe>
+
+    <antiheroe id="AH-0004">
+        <nombre>Catwoman</nombre>
+        <codigo>AH-0004</codigo>
+        <foto>../imgs/catwoman.jpg</foto>
+        <sexo>M</sexo>
+        <poder>Agilidad</poder>
+        <fuerza>5</fuerza>
+        <comentario>Las mejores volteretas</comentario>
+    </antiheroe>
+
+    <antiheroe id="AH-0005">
+        <nombre>Bane</nombre>
+        <codigo>AH-0005</codigo>
+        <foto>../imgs/bane.jpg</foto>
+        <sexo>H</sexo>
+        <poder>Transformacion</poder>
+        <fuerza>8</fuerza>
+        <comentario>Fuerza bruta</comentario>
+    </antiheroe>
+
+    <antiheroe id="AH-0006">
+        <nombre>Lobezno</nombre>
+        <codigo>AH-0006</codigo>
+        <foto>../imgs/lobezno.jpg</foto>
+        <sexo>H</sexo>
+        <poder>Regeneracion</poder>
+        <fuerza>9</fuerza>
+        <comentario>Las garras más afiladas</comentario>
+    </antiheroe>
+</antiheroes>

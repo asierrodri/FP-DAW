@@ -1,0 +1,25 @@
+table {
+    border: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    margin-left: 25%;
+    text-align: center;
+}
+
+th,
+td {
+    font-size: 30px;
+    margin-top: 30%;
+    text-align: center;
+    width: 270px;
+}
+
+tr {
+    background:black;
+    color:white;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
