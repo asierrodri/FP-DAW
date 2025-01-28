@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4 Asier Rodriguez</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <div id="seccion-alumnos">
+            <p>Lista de alumnos</p>
+            <ul id="lista-alumnos">
+                <li>Asier - 30 años - 4º curso</li>
+            </ul>
+
+            <p>Agregar alumno</p>
+            <form method="post">
+                <label for="">Nombre:</label>
+                <input type="text" name="nombre" id="form-nombre">
+                <br>
+                <label for="">Edad:</label>
+                <input type="number" name="edad" id="form-edad">
+                <br>
+                <label for="">Curso:</label>
+                <input type="number" name="curso" id="form-curso">
+            </form>
+            <br>
+            <button onclick="agregarAlumno()">Enviar</button>
+            <button onclick="eliminarAlumno()">Eliminar</button>
+            <br>
+            <button onclick="navegarElementos('anterior')">Anterior</button>
+            <button onclick="navegarElementos('siguiente')">Siguiente</button>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
