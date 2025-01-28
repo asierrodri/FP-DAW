@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="actividad_restaurante.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestión restaurante</h1>
+    <div id="platos">
+        
+    </div>
+
+    <br>
+
+    <div id="menus">
+
+    </div>
+
+    <br>
+
+    <div>
+        <label for="nombre">Nombre del plato:</label>
+        <input type="text" id="nombre" name="nombre">
+
+
+
+        <label for="descripcion">Descripción del plato:</label>
+        <input type="text" id="descripcion" name="descripcion">
+
+
+
+        <label for="precio">Precio del plato:</label>
+        <input type="text" id="precio" name="precio">
+
+
+
+        <button id="btnAgregarPlato" onclick="addPlato()">AÑADIR PLATO</button>
+    </div>
+
+    <br>
+
+    <div>
+        <select id="selectPlatos">
+            <option value="">Seleccione un plato</option>
+        </select>
+
+        <button id="btnEliminar" onclick="deletePlato()">ELIMINAR</button>
+    </div>
+
+    <div>
+        <label for="nombreMenu">Nombre del menú:</label>
+        <input type="text" id="nombreMenu" name="nombreMenu">
+
+        <button id="btnAgregarMenu" onclick="addMenu()">AÑADIR MENÚ</button>
+    </div>
+</body>
+</html>
